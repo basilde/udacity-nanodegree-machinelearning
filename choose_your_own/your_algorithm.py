@@ -49,7 +49,7 @@ classifers_dict = {'AdaBoost': AdaBoostClassifier(n_estimators=100,
                                                             min_samples_split=50,
                                                             random_state=0),
                     'Naive Bayes': GaussianNB(),
-                    'SVM': SVC(C=1, kernel='poly', degree=2, gamma=0.),
+                    'SVM': SVC(C=1, kernel='poly', degree=2, gamma="auto"),
                     'Tree': DecisionTreeClassifier(),
                     'KNN': KNeighborsClassifier(n_neighbors=20, weights='distance', p=3)
                     }
